@@ -1,0 +1,19 @@
+<%= form_with(model: todo) do |form| %>
+  
+
+  <div>
+    <%= form.label :task, style: "display: block" %>
+    <%= form.text_field :task %>
+  </div>
+
+  <div>
+    <%= form.label :done, style: "display: block" %>
+    <%= form.check_box :done %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+
