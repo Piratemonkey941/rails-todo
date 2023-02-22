@@ -1,4 +1,4 @@
-<div id="<%= dom_id todo %>">
+<%= turbo_frame_tag todo do  %>
   <p>
     <strong>Task:</strong>
     <%= todo.task %>
@@ -8,5 +8,12 @@
     <strong>Done:</strong>
     <%= todo.done %>
   </p>
+  
+  <div>
+    <%= link_to "edit", edit_todo_path(todo)  %>
+  </div>
+  <div>
+    <%= button_to "Delete", todo_path(todo), method: :delete  %>
+  </div>
 
-</div>
+<% end %>
