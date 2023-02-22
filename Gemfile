@@ -54,7 +54,7 @@ gem "execjs"
 
 group :production do
   
-  gem "pg", "~> 1.2"
+  gem "pg"
   
 end
 
